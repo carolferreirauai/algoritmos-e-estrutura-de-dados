@@ -5,7 +5,7 @@ using namespace std;
 
 int potencia (int a, int n)
 {
-	if (n == 0) //condi��o parada
+	if (n == 0) //condiçãoo parada
 		return 1;
 	else //chamada recursiva
 		return a * potencia(a, n-1);
@@ -13,14 +13,14 @@ int potencia (int a, int n)
 
 int main()
 {
-	//declarar vari�veis
+	//declarar variáveis
 	int a; //base
 	int n; 
 	
 	//entrada de dados
 	cin >> a >> n;
 	
-	//sa�da de dados
+	//saída de dados
 	cout << potencia(a, n) << endl;
 	
 	return 0;

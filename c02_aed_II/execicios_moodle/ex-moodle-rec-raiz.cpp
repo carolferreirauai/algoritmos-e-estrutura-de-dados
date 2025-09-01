@@ -6,22 +6,22 @@ using namespace std;
 
 double raiz (double x, double x0, double e)
 {
-	if (abs(pow(x0,2)-x) <= e) //condiÁ„o parada && abs == +
+	if (abs(pow(x0,2)-x) <= e) //condi√ß√£o parada && abs = deixa o n√∫mero positivo
 		return x0;
 	else //chamada recursiva
 		return raiz(x,((pow(x0, 2)+x)/(2*x0)),e);
 }
 int main()
 {
-	//declarar vari·veis
-	double x; //È o n˙mero do qula se uqer calcular a raiz.
-	double x0; // È uma estimativa inicial para raiz(x)
-	double e; //È um limitante superior para o erro.
+	//declarar vari√°veis
+	double x; //o n√∫mero do qual se quer calcular a raiz.
+	double x0; // uma estimativa inicial para raiz(x)
+	double e; // um limitante superior para o erro.
 	
 	//entrada de dados
 	cin >> x >> x0 >> e;
 	
-	//saida de dados
+	//sa√≠da de dados
 	cout << fixed << setprecision(4) << raiz(x, x0, e) << endl;
 	return 0;
 }
